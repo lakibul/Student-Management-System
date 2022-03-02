@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container">
-            <a href="" class="navbar-brand">L O G O</a>
+            <a href="" class="navbar-brand"><img src="{{asset('/')}}img/logo.png" alt="" height="40px"/></a>
             <ul class="navbar-nav">
                 <li><a href="" class="nav-link">Home</a></li>
                 <li><a href="" class="nav-link">All Course</a></li>

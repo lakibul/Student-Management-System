@@ -8,7 +8,7 @@
                     <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-md-5">
-                                <img src="{{asset('/')}}img/i1.jpg" class="img-fluid w-100 h-100" alt="">
+                                <img src="{{asset('/')}}img/i6.jpg" class="img-fluid w-100 h-100" alt="">
                             </div>
                             <div class="col-md-7">
                                 <div class="card-body">
@@ -38,7 +38,7 @@
                     <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-md-5">
-                                <img src="{{asset('/')}}img/i3.jpg" class="img-fluid w-100 h-100" alt="">
+                                <img src="{{asset('/')}}img/i6.jpg" class="img-fluid w-100 h-100" alt="">
                             </div>
                             <div class="col-md-7">
                                 <div class="card-body">
@@ -68,7 +68,7 @@
                     <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-md-5">
-                                <img src="{{asset('/')}}img/i1.jpg" class="img-fluid w-100 h-100" alt="">
+                                <img src="{{asset('/')}}img/i6.jpg" class="img-fluid w-100 h-100" alt="">
                             </div>
                             <div class="col-md-7">
                                 <div class="card-body">
@@ -98,7 +98,7 @@
                     <div class="card mb-3">
                         <div class="row g-0">
                             <div class="col-md-5">
-                                <img src="{{asset('/')}}img/i3.jpg" class="img-fluid w-100 h-100" alt="">
+                                <img src="{{asset('/')}}img/i6.jpg" class="img-fluid w-100 h-100" alt="">
                             </div>
                             <div class="col-md-7">
                                 <div class="card-body">
