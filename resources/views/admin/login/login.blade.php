@@ -58,13 +58,13 @@
                             <form class="form-horizontal" action="{{route('login')}}" method="post">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="username">Username</label>
-                                    <input type="text" class="form-control" id="username" placeholder="Enter username">
+                                    <label for="username">Email</label>
+                                    <input type="email" class="form-control" id="username" placeholder="Enter your Email" name="email"/>
                                 </div>
 
                                 <div class="form-group">
                                     <label for="userpassword">Password</label>
-                                    <input type="password" class="form-control" id="userpassword" placeholder="Enter password">
+                                    <input type="password" class="form-control" id="userpassword" placeholder="Enter your password" name="password"/>
                                 </div>
 
                                 <div class="custom-control custom-checkbox">
@@ -79,7 +79,7 @@
 
 
                                 <div class="mt-4 text-center">
-                                    <a href="auth-recoverpw.html" class="text-muted"><i class="mdi mdi-lock mr-1"></i> Forgot your password?</a>
+                                    <a href="" class="text-muted"><i class="mdi mdi-lock mr-1"></i> Forgot your password?</a>
                                 </div>
                             </form>
                         </div>
