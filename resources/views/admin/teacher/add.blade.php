@@ -7,7 +7,8 @@
                 <div class="card-body">
                     <h4 class="card-title mb-4">Add Teacher Form</h4>
 
-                    <form>
+                    <form action="{{route('new-user')}}" method="post">
+                        @csrf
                         <div class="form-group row mb-4">
                             <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Full name</label>
                             <div class="col-sm-9">
