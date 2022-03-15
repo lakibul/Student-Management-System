@@ -5,7 +5,7 @@
         <div class="col-lg-10">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Teacher Table</h4>
+                    <h4 class="card-title">Manage Teacher</h4>
 
                     <div class="table-responsive">
                         <table class="table mb-0">
@@ -13,34 +13,40 @@
                             <thead>
                             <tr>
                                 <th>#</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Username</th>
+                                <th>Teacher Name</th>
+                                <th>Code</th>
+                                <th>Email</th>
+                                <th>Mobile</th>
+                                <th>Address</th>
+                                <th>Image</th>
+                                <th>Status</th>
+                                <th>Action</th>
                             </tr>
                             </thead>
                             <tbody>
+                            @foreach($teachers as $teacher)
                             <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <th scope="row">{{$loop->iteration}}</th>
+                                <td>{{$teacher->name}}</td>
+                                <td>{{$teacher->code}}</td>
+                                <td>{{$teacher->email}}</td>
+                                <td>{{$teacher->mobile}}</td>
+                                <td>{{$teacher->address}}</td>
+                                <td><img src="{{asset($teacher->image)}}" alt="" height="50" width="60"></td>
+                                <td>{{$teacher->status}}</td>
+                                <td>
+                                    <a href="{{route('edit-teacher', ['id' => $teacher->id])}}" class="btn btn-success btn-sm">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a href="{{route('delete-teacher', ['id' => $teacher->id])}}" class="btn btn-danger btn-sm">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
+                                </td>
                             </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
+                            @endforeach
                             </tbody>
                         </table>
                     </div>
-
                 </div>
             </div>
         </div>
